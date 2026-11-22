@@ -2,8 +2,7 @@
 // so fill in title, client, category and description for each. thumbnail is optional: for the sharpest cards, export a 1080x1920 JPG frame from each video into /public/thumbs and set thumbnail: "/thumbs/name.jpg".
 export type Project = {
   id: string; title: string; client: string; category: string; year: string;
-  thumbnail?: string; videoUrl: string; description?: string; aspectRatio: "16/9" | "9/16" | "1/1" | "4/5"; featured?: boolean;
-};
+  thumbnail?: string; videoUrl: string; description?: string; aspectRatio: "16/9" | "9/16" | "1/1" | "4/5"; featured?: boolean;};
 const short = (id: string) => `https://youtube.com/shorts/${id}`;
 export const projects: Project[] = [
 { id: "p6", title: "Project 01", client: "DRIP DROP", category: "Short film", year: "2026", videoUrl: short("D-IStn8V2u0"), aspectRatio: "9/16" },
