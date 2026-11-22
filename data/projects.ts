@@ -6,7 +6,7 @@ export type Project = {
 };
 const short = (id: string) => `https://youtube.com/shorts/${id}`;
 export const projects: Project[] = [
-  { id: "p1", title: "اسم المشروع", client: "اسم العميل", category: "Short film", year: "2026", videoUrl: "https://youtube.com/shorts/D-IStn8V2u0?si=VGd26ssU-kNugLZo", aspectRatio: "9/16" },
+{ id: "p6", title: "Project 01", client: "DRIP DROP", category: "Short film", year: "2026", videoUrl: "https://youtube.com/shorts/D-IStn8V2u0", aspectRatio: "9/16" },
   { id: "p2", title: "Project 02", client: "Ghazl El Mahalla FC", category: "Short film", year: "2026", videoUrl: short("aAPRZIFqkrg"), aspectRatio: "9/16" },
   { id: "p3", title: "Project 03", client: "Fathy Fattouh", category: "Short film", year: "2026", videoUrl: short("x5bxpZ2W8DU"), aspectRatio: "9/16" },
   { id: "p4", title: "Project 04", client: "nerd's", category: "Short film", year: "2026", videoUrl: short("9GeANFlrAYo"), aspectRatio: "9/16" },
