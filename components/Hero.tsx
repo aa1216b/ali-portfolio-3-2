@@ -1,3 +1,4 @@
+
 "use client";
 import { useEffect, useState } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
@@ -20,7 +21,8 @@ export default function Hero() {
       <motion.div style={{ x: tx }} aria-hidden className="absolute inset-0">
         <svg className="h-full w-full" viewBox="0 0 1440 900" preserveAspectRatio="none">
           {Array.from({ length: 16 }).map((_, i) => (
-        
+            <path key={i} d={`M-50 ${300 + i * 26} C 300 ${180 + i * 26}, 520 ${520 + i * 26}, 820 ${340 + i * 26} S 1300 ${200 + i * 26}, 1500 ${360 + i * 26}`} fill="none" stroke="#C0C0C0" strokeOpacity={0.14 + (i % 4) * 0.05} strokeWidth="1" vectorEffect="non-scaling-stroke" style={{ animation: `fade 2.2s ${0.3 + i * 0.06}s both` }} />
+          ))}
         </svg>
       </motion.div>
       {/* Portrait cutout (background removed) */}
